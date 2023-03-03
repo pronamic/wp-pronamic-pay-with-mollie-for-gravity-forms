@@ -1,3 +1,5 @@
+<p align="center"><img src="/.wordpress-org/banner-772x250.png" alt="Banner of Pronamic Pay with Mollie for Gravity Forms"></p>
+
 <h1 align="center">Pronamic Pay with Mollie for Gravity Forms</h1>
 
 <p align="center">
