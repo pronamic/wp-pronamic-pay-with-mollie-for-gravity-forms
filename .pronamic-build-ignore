@@ -36,4 +36,5 @@
 
 # Project
 /build/
+/packages/
 /tools/
