@@ -16,9 +16,15 @@
 		"sort-packages": true
 	},
 	"extra": {
-		"installer-disable": [
-			"wordpress"
-		]
+		"installer-paths": {
+			"packages/{$vendor}/{$name}": [
+				"vendor:pronamic",
+				"vendor:wp-pay",
+				"vendor:wp-pay-extensions",
+				"vendor:wp-pay-gateways",
+				"woocommerce/action-scheduler"
+			]
+		}
 	},
 	"require": {
 		"php": ">=7.4",
