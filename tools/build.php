@@ -8,7 +8,7 @@ run( 'rm -rf ./build/' );
 
 run( 'mkdir ./build/' );
 
-run( ' mkdir ./build/plugin/' );
+run( 'mkdir ./build/plugin/' );
 
 run( 'rsync --recursive --delete --exclude-from=.pronamic-build-ignore ./ ./build/plugin/' );
 
