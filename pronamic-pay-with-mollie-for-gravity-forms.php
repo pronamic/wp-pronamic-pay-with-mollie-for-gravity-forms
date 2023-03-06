@@ -35,7 +35,7 @@ require_once __DIR__ . '/vendor/autoload_packages.php';
  * Bootstrap.
  */
 add_action(
-	'load_plugin_textdomain',
+	'plugins_loaded',
 	function() {
 		load_plugin_textdomain( 'pronamic-pay-with-mollie-for-gravity-forms', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' ); 
 	}
@@ -44,7 +44,7 @@ add_action(
 \Pronamic\WordPress\Pay\Plugin::instance(
 	[
 		'file'             => __FILE__,
-		'action_scheduler' => __DIR__ . '/vendor/woocommerce/action-scheduler/action-scheduler.php',
+		'action_scheduler' => __DIR__ . '/packages/woocommerce/action-scheduler/action-scheduler.php',
 	]
 );
 

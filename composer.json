@@ -45,6 +45,7 @@
 	"scripts": {
 		"make-pot": "vendor/bin/wp i18n make-pot . languages/pronamic-pay-with-mollie-for-gravity-forms.pot --slug=pronamic-pay-with-mollie-for-gravity-forms --exclude=build",
 		"build": [
+			"node tools/change-text-domain.js",
 			"@make-pot",
 			"@php tools/build.php"
 		],
