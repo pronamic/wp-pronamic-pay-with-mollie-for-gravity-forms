@@ -16,7 +16,6 @@
 		"slug": "pronamic-pay-with-mollie-for-gravity-forms"
 	},
 	"devDependencies": {
-		"@wordpress/env": "^5.12.0",
-		"wp-textdomain": "^1.0.1"
+		"@wordpress/env": "^5.12.0"
 	}
 }

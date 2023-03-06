@@ -1,6 +1,6 @@
 <?php
 
-include 'bootstrap.php';
+require 'bootstrap.php';
 
 $slug = $package->config->slug;
 

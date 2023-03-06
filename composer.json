@@ -43,10 +43,15 @@
 		"wp-cli/wp-cli-bundle": "dev-main"
 	},
 	"scripts": {
+		"phpcs": "vendor/bin/phpcs -s -v --ignore=packages,build,tools",
+		"text-domain-fix": "vendor/bin/phpcbf -s -v --ignore=build,tools --sniffs=WordPress.Utils.I18nTextDomainFixer",
 		"make-pot": "vendor/bin/wp i18n make-pot . languages/pronamic-pay-with-mollie-for-gravity-forms.pot --slug=pronamic-pay-with-mollie-for-gravity-forms --exclude=build",
+		"translate": [
+			"@text-domain-fix",
+			"@make-pot"	
+		],
 		"build": [
-			"node tools/change-text-domain.js",
-			"@make-pot",
+			"@translate",
 			"@php tools/build.php"
 		],
 		"version": [
