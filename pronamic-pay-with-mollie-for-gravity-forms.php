@@ -34,6 +34,13 @@ require_once __DIR__ . '/vendor/autoload_packages.php';
 /**
  * Bootstrap.
  */
+add_action(
+	'load_plugin_textdomain',
+	function() {
+		load_plugin_textdomain( 'pronamic-pay-with-mollie-for-gravity-forms', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' ); 
+	}
+);
+
 \Pronamic\WordPress\Pay\Plugin::instance(
 	[
 		'file'             => __FILE__,

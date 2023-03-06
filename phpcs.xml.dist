@@ -5,8 +5,17 @@
 
 	<exclude-pattern>build/*</exclude-pattern>
 	<exclude-pattern>packages/*</exclude-pattern>
+	<exclude-pattern>tools/*</exclude-pattern>
 
 	<rule ref="PronamicWP">
 
+	</rule>
+
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="pronamic-pay-with-mollie-for-gravity-forms" />
+			</property>
+		</properties>
 	</rule>
 </ruleset>

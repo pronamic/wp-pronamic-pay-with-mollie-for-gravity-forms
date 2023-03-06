@@ -37,7 +37,11 @@
 		"wp-cli/wp-cli-bundle": "dev-main"
 	},
 	"scripts": {
-		"build": "@php tools/build.php",
+		"make-pot": "vendor/bin/wp i18n make-pot . languages/pronamic-pay-with-mollie-for-gravity-forms.pot --slug=pronamic-pay-with-mollie-for-gravity-forms --exclude=build",
+		"build": [
+			"@make-pot",
+			"@php tools/build.php"
+		],
 		"version": [
 			"@build"
 		],
