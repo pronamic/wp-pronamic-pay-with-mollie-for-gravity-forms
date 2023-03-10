@@ -32,8 +32,8 @@
 		"composer/installers": "^2.2",
 		"woocommerce/action-scheduler": "^3.5",
 		"wp-pay-extensions/gravityforms": "^4.5",
-		"wp-pay-gateways/mollie": "dev-develop as 4.7",
-		"wp-pay/core": "dev-develop as 4.7"
+		"wp-pay-gateways/mollie": "^4.7",
+		"wp-pay/core": "^4.8"
 	},
 	"require-dev": {
 		"pronamic/wp-coding-standards": "^1.3",
