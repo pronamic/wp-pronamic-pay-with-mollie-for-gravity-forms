@@ -8,11 +8,16 @@
 
 ## Table of Contents
 
+- [Video](#video)
 - [Introduction](#introduction)
   - [Pronamic Pay](#pronamic-pay)
   - [Gravity Forms](#gravity-forms)
   - [Mollie](#mollie)
 - [Dependencies](#dependencies)
+
+## Video
+
+[![Accept payments with Mollie and Gravity Forms for WordPress](https://img.youtube.com/vi/pZk1EFN8vv8/maxresdefault.jpg)](https://youtu.be/pZk1EFN8vv8)
 
 ## Introduction
 
