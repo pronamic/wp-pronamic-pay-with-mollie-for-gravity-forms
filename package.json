@@ -12,9 +12,6 @@
 		"url": "https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms/issues"
 	},
 	"homepage": "https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms#readme",
-	"config": {
-		"slug": "pronamic-pay-with-mollie-for-gravity-forms"
-	},
 	"devDependencies": {
 		"@wordpress/env": "^5.12.0"
 	}
