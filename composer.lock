@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aeae1fea72726b2546443f22c2621929",
+    "content-hash": "6f514a269b161c082aa7b7b5bdb476d0",
     "packages": [
         {
             "name": "automattic/jetpack-autoloader",
@@ -2148,6 +2148,54 @@
                 "source": "https://github.com/PHPCompatibility/PHPCompatibilityWP"
             },
             "time": "2022-10-24T09:00:36+00:00"
+        },
+        {
+            "name": "pronamic/pronamic-cli",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pronamic/pronamic-cli.git",
+                "reference": "fb4cb4be1fdb24bd2820fe1f12ea9035fb83b2f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pronamic/pronamic-cli/zipball/fb4cb4be1fdb24bd2820fe1f12ea9035fb83b2f6",
+                "reference": "fb4cb4be1fdb24bd2820fe1f12ea9035fb83b2f6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4",
+                "symfony/console": "^5.0 || ^6.0 || ^6.1 || ^6.2",
+                "symfony/filesystem": "^5.0 || ^6.0 || ^6.1 || ^6.2",
+                "symfony/process": "^5.0 || ^6.0 || ^6.1 || ^6.2"
+            },
+            "require-dev": {
+                "pronamic/wp-coding-standards": "^1.3",
+                "yoast/phpunit-polyfills": "^1.0"
+            },
+            "default-branch": true,
+            "bin": [
+                "bin/pronamic"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Pronamic\\CLI\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Pronamic",
+                    "email": "info@pronamic.eu"
+                }
+            ],
+            "description": "Pronamic CLI is the command-line interface for Pronamic.",
+            "support": {
+                "issues": "https://github.com/pronamic/pronamic-cli/issues",
+                "source": "https://github.com/pronamic/pronamic-cli/tree/main"
+            },
+            "time": "2023-04-11T19:27:08+00:00"
         },
         {
             "name": "pronamic/wp-coding-standards",
@@ -5967,6 +6015,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "pronamic/pronamic-cli": 20,
         "pronamic/wp-deployer": 20,
         "wp-cli/wp-cli": 20,
         "wp-cli/wp-cli-bundle": 20
