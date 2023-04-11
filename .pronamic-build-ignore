@@ -1,5 +1,5 @@
 # Pronamic build ignore
-# https://github.com/pronamic/wp-deployer/blob/main/exclude.txt
+# https://github.com/pronamic/pronamic-cli/blob/main/exclude.txt
 
 # Build
 /build/
