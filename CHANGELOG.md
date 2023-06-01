@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.2] - 2023-06-01
+
+### Composer
+
+- Changed `automattic/jetpack-autoloader` from `v2.11.17` to `v2.11.21`.
+	Release notes: https://github.com/Automattic/jetpack-autoloader/releases/tag/v2.11.21
+- Changed `woocommerce/action-scheduler` from `3.5.4` to `3.6.0`.
+	Release notes: https://github.com/woocommerce/action-scheduler/releases/tag/3.6.0
+- Changed `wp-pay-extensions/gravityforms` from `v4.5.3` to `v4.5.5`.
+	Release notes: https://github.com/pronamic/wp-pronamic-pay-gravityforms/releases/tag/v4.5.5
+- Changed `wp-pay-gateways/mollie` from `v4.7.6` to `v4.7.7`.
+	Release notes: https://github.com/pronamic/wp-pronamic-pay-mollie/releases/tag/v4.7.7
+- Changed `wp-pay/core` from `v4.9.0` to `v4.9.3`.
+	Release notes: https://github.com/pronamic/wp-pay-core/releases/tag/v4.9.3
+
+Full set of changes: [`1.0.1...1.0.2`][1.0.2]
+
+[1.0.2]: https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms/compare/v1.0.1...v1.0.2
+
 ## [1.0.1] - 2023-03-29
 
 ### Commits
