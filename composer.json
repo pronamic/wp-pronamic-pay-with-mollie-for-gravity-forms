@@ -42,7 +42,7 @@
 		"roots/wordpress-no-content": "^6.1"
 	},
 	"scripts": {
-		"phpcs": "vendor/bin/phpcs -s -v --ignore=packages,build,tools",
+		"phpcs": "vendor/bin/phpcs -s -v --ignore=packages,build",
 		"build": "vendor/bin/pronamic wp-build",
 		"translate": [
 			"@build",
