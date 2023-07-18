@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.4] - 2023-07-18
+
+### Composer
+
+- Changed `wp-pay/core` from `v4.9.4` to `v4.10.0`.
+	Release notes: https://github.com/pronamic/wp-pay-core/releases/tag/v4.10.0
+
+Full set of changes: [`1.0.3...1.0.4`][1.0.4]
+
+[1.0.4]: https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms/compare/v1.0.3...v1.0.4
+
 ## [1.0.3] - 2023-07-12
 
 ### Commits
