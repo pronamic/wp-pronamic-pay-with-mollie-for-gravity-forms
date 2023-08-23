@@ -30,7 +30,7 @@ This plugin is developed from the idea that online payments should be easy. Some
 == Installation ==
 
 1. To install this plugin you can follow the WordPress documentation section "[Installing Plugins](https://wordpress.org/documentation/article/manage-plugins/#installing-plugins-1)".
-2. After installation, you can follow the manual "[How to link Pronamic Pay to Gravity Forms?](https://www.pronamicpay.com/en/manuals/how-to-connect-pronamic-pay-to-gravity-forms/)".
+2. After installation, you can follow the manual "[How to link Pronamic Pay to Gravity Forms](https://www.pronamicpay.com/en/manuals/how-to-connect-pronamic-pay-to-gravity-forms/)".
 
 == Screenshots ==
 
