@@ -3,6 +3,11 @@
 <ruleset name="Pronamic Pay with Mollie for Gravity Forms">
 	<file>.</file>
 
+	<exclude-pattern type="relative">^build/*</exclude-pattern>
+	<exclude-pattern type="relative">^node_modules/*</exclude-pattern>
+	<exclude-pattern type="relative">^packages/*</exclude-pattern>
+	<exclude-pattern type="relative">^vendor/*</exclude-pattern>
+
 	<rule ref="PronamicWP">
 
 	</rule>
@@ -15,15 +20,5 @@
 		</properties>
 	</rule>
 
-	<rule ref="WordPress.Utils.I18nTextDomainFixer">
-		<properties>
-			<property name="old_text_domain" type="array">
-				<element value="action-scheduler" />
-				<element value="pronamic_ideal" />
-				<element value="pronamic-money" />
-			</property>
-
-			<property name="new_text_domain" value="pronamic-pay-with-mollie-for-gravity-forms" />
-		</properties>
-	</rule>
+	<rule ref="phpcs-text-domain-fixer.xml" />
 </ruleset>
