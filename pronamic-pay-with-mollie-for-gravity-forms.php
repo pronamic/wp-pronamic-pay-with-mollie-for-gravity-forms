@@ -6,7 +6,7 @@
  *
  * Version: 1.1.0
  * Requires at least: 5.9
- * Requires PHP: 7.4
+ * Requires PHP: 8.0
  *
  * Author: Pronamic
  * Author URI: https://www.pronamic.eu/
@@ -40,8 +40,8 @@ require_once __DIR__ . '/vendor/autoload_packages.php';
  */
 add_action(
 	'plugins_loaded',
-	function() {
-		load_plugin_textdomain( 'pronamic-pay-with-mollie-for-gravity-forms', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' ); 
+	function () {
+		load_plugin_textdomain( 'pronamic-pay-with-mollie-for-gravity-forms', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 	}
 );
 
@@ -54,7 +54,7 @@ add_action(
 
 add_filter(
 	'pronamic_pay_modules',
-	function( $modules ) {
+	function ( $modules ) {
 		$modules[] = 'subscriptions';
 
 		return $modules;
@@ -63,7 +63,7 @@ add_filter(
 
 add_filter(
 	'pronamic_pay_plugin_integrations',
-	function( $integrations ) {
+	function ( $integrations ) {
 		$class = \Pronamic\WordPress\Pay\Extensions\GravityForms\Extension::class;
 
 		if ( ! array_key_exists( $class, $integrations ) ) {
@@ -76,7 +76,7 @@ add_filter(
 
 add_filter(
 	'pronamic_pay_gateways',
-	function( $gateways ) {
+	function ( $gateways ) {
 		$gateways[] = new \Pronamic\WordPress\Pay\Gateways\Mollie\Integration(
 			[
 				'register_url' => 'https://www.mollie.com/nl/signup/665327',
