@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2023-11-09
+
+### Changed
+
+- Requires PHP 8. ([b811fce](https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms/commit/b811fce525604af985a12cb2a5172c33d3857cc8))
+
+### Composer
+
+- Changed `php` from `>=7.4` to `>=8.0`.
+- Changed `wp-pay-gateways/mollie` from `v4.7.11` to `v4.8.1`.
+	Release notes: https://github.com/pronamic/wp-pronamic-pay-mollie/releases/tag/v4.8.1
+- Changed `wp-pay/core` from `v4.14.1` to `v4.14.2`.
+	Release notes: https://github.com/pronamic/wp-pay-core/releases/tag/v4.14.2
+
+Full set of changes: [`1.1.0...1.2.0`][1.2.0]
+
+[1.2.0]: https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms/compare/v1.1.0...v1.2.0
+
 ## [1.1.0] - 2023-11-07
 
 ### Commits
