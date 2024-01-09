@@ -21,7 +21,7 @@ https://youtu.be/pZk1EFN8vv8
 This plugin is developed from the idea that online payments should be easy. Some of the features:
 
 - Easy install
-- Support for 10+ payment methods
+- Support for most major payment methods
 - Payment status pages
 - Automatic payment status updates via Mollie webhooks and the WordPress REST API
 - High quality support
@@ -54,4 +54,4 @@ Pronamic Pay with Mollie for Gravity Forms supports recurring payments. Set your
 - [Pronamic Pay with Mollie for Gravity Forms](https://www.pronamicpay.com/en/connections/mollie-for-gravity-forms/)
 - [Pronamic Pay manuals for Mollie](https://www.pronamicpay.com/en/manual-category/mollie/)
 - [Pronamic Pay manuals for Gravity Forms](https://www.pronamicpay.com/en/manual-category/gravity-forms/)
--	[Pronamic](https://www.pronamic.eu/)
+- [Pronamic](https://www.pronamic.eu/)
