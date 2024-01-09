@@ -1,6 +1,6 @@
 === Pronamic Pay with Mollie for Gravity Forms ===
 Contributors: pronamic
-Tags: mollie, gravity, form, payment, donation
+Tags: mollie, gravity, form, payment, donation, recurring, subscriptions, credit card, paypal, iDEAL, bancontact, klarna
 Requires at least: 5.9
 Tested up to: 6.2
 Requires PHP: 8.0
@@ -27,6 +27,9 @@ This plugin is developed from the idea that online payments should be easy. Some
 - High quality support
 - Built by Pronamic
 
+= Recurring payments =
+Pronamic Pay with Mollie for Gravity Forms supports recurring payments. Set your custom schedule like, a week, month or year to receive automatic payments. If you want to sell subscriptions or receive recurring donations this could be the great solution for you. You can also set subscription renewal notification for the recurring payments, which will be send one week before the next payment.
+
 == Installation ==
 
 1. To install this plugin you can follow the WordPress documentation section "[Installing Plugins](https://wordpress.org/documentation/article/manage-plugins/#installing-plugins-1)".
@@ -48,5 +51,7 @@ This plugin is developed from the idea that online payments should be easy. Some
 
 == Links ==
 
--	[Pronamic Pay](https://www.pronamicpay.com/)
+- [Pronamic Pay with Mollie for Gravity Forms](https://www.pronamicpay.com/en/connections/mollie-for-gravity-forms/)
+- [Pronamic Pay manuals for Mollie](https://www.pronamicpay.com/en/manual-category/mollie/)
+- [Pronamic Pay manuals for Gravity Forms](https://www.pronamicpay.com/en/manual-category/gravity-forms/)
 -	[Pronamic](https://www.pronamic.eu/)
