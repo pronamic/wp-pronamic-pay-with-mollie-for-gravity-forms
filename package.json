@@ -13,7 +13,7 @@
 	},
 	"homepage": "https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms#readme",
 	"devDependencies": {
-		"@wordpress/env": "^8.11.0",
+		"@wordpress/env": "^9.2.0",
 		"@wordpress/scripts": "^27.1.0"
 	}
 }
