@@ -4,7 +4,7 @@ Tags: mollie, gravity, form, payment, donation, recurring, subscriptions, credit
 Requires at least: 5.9
 Tested up to: 6.4
 Requires PHP: 8.0
-Stable tag: 1.2.1
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
