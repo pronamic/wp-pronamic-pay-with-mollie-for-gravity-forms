@@ -2,7 +2,7 @@
 Contributors: pronamic
 Tags: mollie, gravity, form, payment, donation, recurring, subscriptions, credit card, paypal, iDEAL, bancontact, klarna
 Requires at least: 5.9
-Tested up to: 6.2
+Tested up to: 6.4
 Requires PHP: 8.0
 Stable tag: 1.2.1
 License: GPLv2 or later
