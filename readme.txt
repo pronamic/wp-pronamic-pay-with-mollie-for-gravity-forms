@@ -28,6 +28,7 @@ This plugin is developed from the idea that online payments should be easy. Some
 - Built by Pronamic
 
 = Recurring payments =
+
 Pronamic Pay with Mollie for Gravity Forms supports recurring payments. Set your custom schedule like, a week, month or year to receive automatic payments. If you want to sell subscriptions or receive recurring donations this could be the great solution for you. You can also set subscription renewal notification for the recurring payments, which will be send one week before the next payment.
 
 == Installation ==
