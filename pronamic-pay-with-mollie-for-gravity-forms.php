@@ -47,8 +47,9 @@ add_action(
 
 \Pronamic\WordPress\Pay\Plugin::instance(
 	[
-		'file'             => __FILE__,
-		'action_scheduler' => __DIR__ . '/packages/woocommerce/action-scheduler/action-scheduler.php',
+		'file'                 => __FILE__,
+		'action_scheduler'     => __DIR__ . '/packages/woocommerce/action-scheduler/action-scheduler.php',
+		'pronamic_service_url' => 'https://api.wp-pay.org/wp-json/pronamic-pay/v1/payments',
 	]
 );
 
