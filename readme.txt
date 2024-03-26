@@ -1,6 +1,6 @@
 === Pronamic Pay with Mollie for Gravity Forms ===
 Contributors: pronamic
-Tags: mollie, gravity, form, payment, donation, recurring, subscriptions, credit card, paypal, iDEAL, bancontact, klarna
+Tags: pronamic, pay, mollie, gravity, gravityforms
 Requires at least: 5.9
 Tested up to: 6.5
 Requires PHP: 8.0
