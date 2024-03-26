@@ -5,6 +5,30 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] - 2024-03-26
+
+### Commits
+
+- Tested up to: 6.5. ([37fbe26](https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms/commit/37fbe26aa161f6a84f0327c3de735b09f0c3dd4f))
+- Removed Mollie signup link. ([70e274e](https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms/commit/70e274e0c449499833d73cc41fcb15e4af52776c))
+
+### Composer
+
+- Changed `automattic/jetpack-autoloader` from `v3.0.2` to `v3.0.4`.
+	Release notes: https://github.com/Automattic/jetpack-autoloader/releases/tag/v3.0.4
+- Changed `woocommerce/action-scheduler` from `3.7.1` to `3.7.3`.
+	Release notes: https://github.com/woocommerce/action-scheduler/releases/tag/3.7.3
+- Changed `wp-pay-extensions/gravityforms` from `v4.6.0` to `v4.6.1`.
+	Release notes: https://github.com/pronamic/wp-pronamic-pay-gravityforms/releases/tag/v4.6.1
+- Changed `wp-pay-gateways/mollie` from `v4.9.0` to `v4.10.0`.
+	Release notes: https://github.com/pronamic/wp-pronamic-pay-mollie/releases/tag/v4.10.0
+- Changed `wp-pay/core` from `v4.15.0` to `v4.16.0`.
+	Release notes: https://github.com/pronamic/wp-pay-core/releases/tag/v4.16.0
+
+Full set of changes: [`1.3.0...1.4.0`][1.4.0]
+
+[1.4.0]: https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms/compare/v1.3.0...v1.4.0
+
 ## [1.3.0] - 2024-02-08
 
 ### Changed
