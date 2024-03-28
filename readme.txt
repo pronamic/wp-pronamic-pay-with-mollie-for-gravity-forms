@@ -12,6 +12,8 @@ Connect Mollie to Gravity Forms with Pronamic Pay. This free plugin is all that 
 
 == Description ==
 
+[Pronamic Pay](https://www.pronamicpay.com/) · [GitHub](https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms)
+
 The installation is as easy as creating a form. Just add your form fields, choose a payment amount and add a list of the available payment methods from Mollie. You can choose which payment methods you want to embed in your form.
 
 https://youtu.be/pZk1EFN8vv8
