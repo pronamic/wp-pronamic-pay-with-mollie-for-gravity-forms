@@ -24,4 +24,4 @@ jobs:
         env:
           SVN_USERNAME: pronamic
           SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
-          WP_SLUG: pronamic-pay-with-mollie-for-contact-form-7
+          WP_SLUG: pronamic-pay-with-mollie-for-gravity-forms
