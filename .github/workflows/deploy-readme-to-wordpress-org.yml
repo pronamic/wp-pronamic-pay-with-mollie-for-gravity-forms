@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     environment:
-      name: wordpress_org_plugin_directory
+      name: WordPress.org plugin directory
       url: https://wordpress.org/plugins/pronamic-pay-with-mollie-for-gravity-forms/
 
     steps:
