@@ -7,6 +7,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    environment:
+      name: wordpress_org_plugin_directory
+      url: https://wordpress.org/plugins/pronamic-pay-with-mollie-for-gravity-forms/
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
