@@ -12,13 +12,13 @@ Connect Mollie to Gravity Forms with Pronamic Pay. This free plugin is all that 
 
 == Description ==
 
-[Pronamic Pay](https://www.pronamicpay.com/) · [GitHub](https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms)
+[Pronamic Pay](https://www.pronamicpay.com/) · [Pronamic](https://www.pronamic.eu/) · [GitHub](https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms)
 
 The installation is as easy as creating a form. Just add your form fields, choose a payment amount and add a list of the available payment methods from Mollie. You can choose which payment methods you want to embed in your form.
 
 https://youtu.be/pZk1EFN8vv8
 
-= Features =
+### Features
 
 This plugin is developed from the idea that online payments should be easy. Some of the features:
 
@@ -29,9 +29,33 @@ This plugin is developed from the idea that online payments should be easy. Some
 - High quality support
 - Built by Pronamic
 
-= Recurring payments =
+### Recurring payments
 
 Pronamic Pay with Mollie for Gravity Forms supports recurring payments. Set your custom schedule like, a week, month or year to receive automatic payments. If you want to sell subscriptions or receive recurring donations this could be the great solution for you. You can also set subscription renewal notification for the recurring payments, which will be send one week before the next payment.
+
+### Pronamic Pay Premium
+
+With a Pronamic Pay Premium license, you get access to exceptional support and a range of exclusive benefits that take your payment experience to the next level.
+
+#### Premium support
+
+- **Fast and expert help** from our team of specialists.
+- **Priority treatment** for your support tickets.
+
+#### Premium add-ons
+
+- **Pronamic Pay Fundraising Add-On**
+  Easily create online fundraising and crowdfunding campaigns.
+- **Pronamic Pay Notification Add-On**
+  Set up extensive notifications for payers and administrators.
+- **Pronamic Pay WP All Export Add-On**
+  Export all your payment data with a few clicks.
+
+And much more!
+
+Discover all the benefits of Pronamic Pay Premium at [https://www.pronamicpay.com/](https://www.pronamicpay.com/).
+
+**Upgrade to Pronamic Pay Premium now and take advantage of all the benefits!**
 
 == Installation ==
 
