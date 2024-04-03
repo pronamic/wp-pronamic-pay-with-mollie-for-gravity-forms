@@ -78,7 +78,7 @@ Discover all the benefits of Pronamic Pay Premium at [https://www.pronamicpay.co
 
 == Links ==
 
-- [Pronamic Pay with Mollie for Gravity Forms](https://www.pronamicpay.com/en/connections/mollie-for-gravity-forms/)
-- [Pronamic Pay manuals for Mollie](https://www.pronamicpay.com/en/manual-category/mollie/)
-- [Pronamic Pay manuals for Gravity Forms](https://www.pronamicpay.com/en/manual-category/gravity-forms/)
+- [Pronamic Pay with Mollie for Gravity Forms](https://www.pronamicpay.com/connections/mollie-for-gravity-forms/)
+- [Pronamic Pay manuals for Mollie](https://www.pronamicpay.com/manual-category/mollie/)
+- [Pronamic Pay manuals for Gravity Forms](https://www.pronamicpay.com/manual-category/gravity-forms/)
 - [Pronamic](https://www.pronamic.eu/)
