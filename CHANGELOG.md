@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.2] - 2024-05-06
+
+### Composer
+
+- Changed `automattic/jetpack-autoloader` from `v3.0.5` to `v3.0.6`.
+	Release notes: https://github.com/Automattic/jetpack-autoloader/releases/tag/v3.0.6
+- Changed `wp-pay-gateways/mollie` from `v4.10.2` to `v4.10.3`.
+	Release notes: https://github.com/pronamic/wp-pronamic-pay-mollie/releases/tag/v4.10.3
+
+Full set of changes: [`1.4.1...1.4.2`][1.4.2]
+
+[1.4.2]: https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms/compare/v1.4.1...v1.4.2
+
 ## [1.4.1] - 2024-04-22
 
 ### Composer
