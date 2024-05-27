@@ -5,6 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.0] - 2024-05-27
+
+### Composer
+
+- Changed `php` from `>=8.0` to `>=8.1`.
+- Changed `woocommerce/action-scheduler` from `3.7.4` to `3.8.0`.
+	Release notes: https://github.com/woocommerce/action-scheduler/releases/tag/3.8.0
+- Changed `wp-pay-gateways/mollie` from `v4.10.3` to `v4.11.0`.
+	Release notes: https://github.com/pronamic/wp-pronamic-pay-mollie/releases/tag/v4.11.0
+- Changed `wp-pay/core` from `v4.17.0` to `v4.18.0`.
+	Release notes: https://github.com/pronamic/wp-pay-core/releases/tag/v4.18.0
+
+Full set of changes: [`1.4.3...1.5.0`][1.5.0]
+
+[1.5.0]: https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms/compare/v1.4.3...v1.5.0
+
 ## [1.4.3] - 2024-05-15
 
 ### Composer
