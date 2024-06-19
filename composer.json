@@ -34,7 +34,7 @@
 		"woocommerce/action-scheduler": "^3.8",
 		"wp-pay-extensions/gravityforms": "^4.8",
 		"wp-pay-gateways/mollie": "^4.12",
-		"wp-pay/core": "^4.19"
+		"wp-pay/core": "^4.20"
 	},
 	"require-dev": {
 		"pronamic/pronamic-cli": "^1.1",
