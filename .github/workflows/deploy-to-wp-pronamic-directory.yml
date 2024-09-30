@@ -29,7 +29,7 @@ jobs:
     steps:
       - name: 'Download'
         run: |
-          gh release download v${{ inputs.version }} --repo ${{ github.repository }} --pattern {{ env.FILENAME }}
+          gh release download v${{ inputs.version }} --repo ${{ github.repository }} --pattern ${{ env.FILENAME }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -46,4 +46,4 @@ jobs:
         run: 'gcloud info'
 
       - name: 'Upload'
-        run: 'gcloud storage cp {{ env.FILENAME }} gs://wp.pronamic.download/plugins/${{ inputs.slug }}/{{ env.FILENAME }}'
+        run: 'gcloud storage cp ${{ env.FILENAME }} gs://wp.pronamic.download/plugins/${{ inputs.slug }}/${{ env.FILENAME }}'
