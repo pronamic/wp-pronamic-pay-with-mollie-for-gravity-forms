@@ -3,14 +3,16 @@ name: Deploy to Pronamic WordPress directory
 on:
   workflow_dispatch:
     inputs:
-      latest:
-        default: true
-        type: boolean
-        description: 'Deploy as "Latest"'
       tag:
         description: 'Tag to deploy to Pronamic WordPress directory'
         required: true
         type: string
+      latest:
+        default: true
+        type: boolean
+        description: 'Deploy as "Latest"'
+  release:
+    types: [released]
 
 jobs:
   deploy:
@@ -32,5 +34,5 @@ jobs:
           username: pronamic
           password: ${{ secrets.WP_PRONAMIC_DIRECTORY_PASSWORD }}
           slug: pronamic-pay-with-mollie-for-gravity-forms
-          tag: ${{ inputs.tag }}
-          latest: ${{ inputs.latest }}
+          tag: ${{ inputs.tag || github.event.release.tag_name }}
+          latest: ${{ inputs.latest || github.event.release.latest }}
