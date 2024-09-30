@@ -3,8 +3,8 @@ name: Deploy to Pronamic WordPress directory
 on:
   workflow_dispatch:
     inputs:
-      tag:
-        description: 'Tag to deploy to WordPress.org'
+      version:
+        description: 'Version to deploy to Pronamic WordPress directory'
         required: true
         type: string
 
@@ -23,7 +23,7 @@ jobs:
     steps:
       - name: 'Download'
         run: |
-          gh release download ${{ inputs.tag }} --repo ${{ github.repository }} --pattern pronamic-pay-with-mollie-for-gravity-forms.${{ inputs.tag }}.zip
+          gh release download v${{ inputs.version }} --repo ${{ github.repository }} --pattern pronamic-pay-with-mollie-for-gravity-forms.${{ inputs.version }}.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
