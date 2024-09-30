@@ -16,6 +16,10 @@ jobs:
       name: Pronamic WordPress directory
       url: https://wp.pronamic.directory/plugins/pronamic-pay-with-mollie-for-gravity-forms/
 
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+
     steps:
       - id: 'auth'
         uses: 'google-github-actions/auth@v2'
