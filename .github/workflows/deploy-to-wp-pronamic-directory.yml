@@ -21,6 +21,12 @@ jobs:
       id-token: 'write'
 
     steps:
+      - name: 'Download'
+        run: |
+          gh release download ${{ inputs.tag }} --repo ${{ github.repository }} --pattern pronamic-pay-with-mollie-for-gravity-forms.${{ inputs.tag }}.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - id: 'auth'
         uses: 'google-github-actions/auth@v2'
         with:
