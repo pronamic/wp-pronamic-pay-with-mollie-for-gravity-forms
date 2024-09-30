@@ -30,31 +30,29 @@ jobs:
       FILENAME: ${{ inputs.slug }}.${{ inputs.version }}.zip
 
     steps:
-      - name: 'Download'
+      - name: 'Download GitHub release plugin ZIP file'
         run: |
           gh release download v${{ inputs.version }} --repo ${{ github.repository }} --pattern ${{ env.FILENAME }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - id: 'auth'
+        name: 'Authenticate to Google Cloud'
         uses: 'google-github-actions/auth@v2'
         with:
           project_id: 'pronamic-downloads'
           workload_identity_provider: 'projects/623467151959/locations/global/workloadIdentityPools/github/providers/my-repo'
 
-      - name: 'Set up Cloud SDK'
+      - name: 'Setup Google Cloud CLI'
         uses: 'google-github-actions/setup-gcloud@v2'
 
-      - name: 'Use gcloud CLI'
-        run: 'gcloud info'
-
-      - name: 'Upload'
+      - name: 'Upload to Cloud Storage'
         run: 'gcloud storage cp ${{ env.FILENAME }} gs://wp.pronamic.download/plugins/${{ inputs.slug }}/${{ env.FILENAME }}'
 
-      - name: 'Copy latest'
+      - name: 'Set latest on Cloud Storage'
         if: inputs.latest
         run: 'gcloud storage cp gs://wp.pronamic.download/plugins/${{ inputs.slug }}/${{ env.FILENAME }} gs://wp.pronamic.download/plugins/${{ inputs.slug }}/${{ inputs.slug }}.zip'
 
-      - name: 'Set latest'
+      - name: 'Set latest on Pronamic WordPress directory'
         if: inputs.latest
         run: 'curl --fail-with-body --user "pronamic:${{ secrets.WP_PRONAMIC_DIRECTORY_PASSWORD }}" --data "version=${{ inputs.version }}" --request PATCH https://wp.pronamic.directory/wp-json/pronamic-wp-extensions/v1/plugins/${{ inputs.slug }}'
