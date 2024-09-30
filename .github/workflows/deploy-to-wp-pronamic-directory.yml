@@ -3,6 +3,10 @@ name: Deploy to Pronamic WordPress directory
 on:
   workflow_dispatch:
     inputs:
+      latest:
+        default: true
+        type: boolean
+        description: 'Deploy as "Latest"'
       slug:
         default: 'pronamic-pay-with-mollie-for-gravity-forms'
         type: string
@@ -47,3 +51,7 @@ jobs:
 
       - name: 'Upload'
         run: 'gcloud storage cp ${{ env.FILENAME }} gs://wp.pronamic.download/plugins/${{ inputs.slug }}/${{ env.FILENAME }}'
+
+      - name: 'Copy latest'
+        if: inputs.latest
+        run: 'gcloud storage cp gs://wp.pronamic.download/plugins/${{ inputs.slug }}/${{ env.FILENAME }} gs://wp.pronamic.download/plugins/${{ inputs.slug }}/${{ inputs.slug }}.zip'
