@@ -7,9 +7,6 @@ on:
         default: true
         type: boolean
         description: 'Deploy as "Latest"'
-      slug:
-        default: 'pronamic-pay-with-mollie-for-gravity-forms'
-        type: string
       version:
         description: 'Version to deploy to Pronamic WordPress directory'
         required: true
@@ -26,33 +23,14 @@ jobs:
     permissions:
       id-token: 'write'
 
-    env:
-      FILENAME: ${{ inputs.slug }}.${{ inputs.version }}.zip
-
     steps:
-      - name: 'Download GitHub release plugin ZIP file'
-        run: |
-          gh release download v${{ inputs.version }} --repo ${{ github.repository }} --pattern ${{ env.FILENAME }}
+      - name: Deploy
+        uses: pronamic/action-wp-pronamic-directory-plugin-deploy@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - id: 'auth'
-        name: 'Authenticate to Google Cloud'
-        uses: 'google-github-actions/auth@v2'
         with:
-          project_id: 'pronamic-downloads'
-          workload_identity_provider: 'projects/623467151959/locations/global/workloadIdentityPools/github/providers/my-repo'
-
-      - name: 'Setup Google Cloud CLI'
-        uses: 'google-github-actions/setup-gcloud@v2'
-
-      - name: 'Upload to Cloud Storage'
-        run: 'gcloud storage cp ${{ env.FILENAME }} gs://wp.pronamic.download/plugins/${{ inputs.slug }}/${{ env.FILENAME }}'
-
-      - name: 'Set latest on Cloud Storage'
-        if: inputs.latest
-        run: 'gcloud storage cp gs://wp.pronamic.download/plugins/${{ inputs.slug }}/${{ env.FILENAME }} gs://wp.pronamic.download/plugins/${{ inputs.slug }}/${{ inputs.slug }}.zip'
-
-      - name: 'Set latest on Pronamic WordPress directory'
-        if: inputs.latest
-        run: 'curl --fail-with-body --user "pronamic:${{ secrets.WP_PRONAMIC_DIRECTORY_PASSWORD }}" --data "version=${{ inputs.version }}" --request PATCH https://wp.pronamic.directory/wp-json/pronamic-wp-extensions/v1/plugins/${{ inputs.slug }}'
+          username: pronamic
+          password: ${{ secrets.WP_PRONAMIC_DIRECTORY_PASSWORD }}
+          slug: pronamic-pay-with-mollie-for-gravity-forms
+          version: ${{ inputs.version }}
+          latest: ${{ inputs.latest }}
