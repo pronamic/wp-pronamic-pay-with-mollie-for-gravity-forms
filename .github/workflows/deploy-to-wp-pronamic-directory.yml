@@ -7,8 +7,8 @@ on:
         default: true
         type: boolean
         description: 'Deploy as "Latest"'
-      version:
-        description: 'Version to deploy to Pronamic WordPress directory'
+      tag:
+        description: 'Tag to deploy to Pronamic WordPress directory'
         required: true
         type: string
 
@@ -32,5 +32,5 @@ jobs:
           username: pronamic
           password: ${{ secrets.WP_PRONAMIC_DIRECTORY_PASSWORD }}
           slug: pronamic-pay-with-mollie-for-gravity-forms
-          version: ${{ inputs.version }}
+          tag: ${{ inputs.tag }}
           latest: ${{ inputs.latest }}
