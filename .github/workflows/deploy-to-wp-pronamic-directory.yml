@@ -57,4 +57,4 @@ jobs:
 
       - name: 'Set latest'
         if: inputs.latest
-        run: 'curl --netrc --data "version=${{ inputs.version }}" --request PATCH https://wp.pronamic.directory/wp-json/pronamic-wp-extensions/v1/plugins/${{ inputs.slug }}'
+        run: 'curl --user pronamic:${{ secrets.WP_PRONAMIC_DIRECTORY_PASSWORD }} --data "version=${{ inputs.version }}" --request PATCH https://wp.pronamic.directory/wp-json/pronamic-wp-extensions/v1/plugins/${{ inputs.slug }}'
