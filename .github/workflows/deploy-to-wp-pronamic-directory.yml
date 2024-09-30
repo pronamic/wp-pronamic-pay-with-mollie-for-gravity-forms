@@ -24,7 +24,6 @@ jobs:
       url: https://wp.pronamic.directory/plugins/pronamic-pay-with-mollie-for-gravity-forms/
 
     permissions:
-      contents: 'read'
       id-token: 'write'
 
     env:
@@ -55,3 +54,7 @@ jobs:
       - name: 'Copy latest'
         if: inputs.latest
         run: 'gcloud storage cp gs://wp.pronamic.download/plugins/${{ inputs.slug }}/${{ env.FILENAME }} gs://wp.pronamic.download/plugins/${{ inputs.slug }}/${{ inputs.slug }}.zip'
+
+      - name: 'Set latest'
+        if: inputs.latest
+        run: 'curl --netrc --data "version=${{ inputs.version }}" --request PATCH https://wp.pronamic.directory/wp-json/pronamic-wp-extensions/v1/plugins/${{ inputs.slug }}
