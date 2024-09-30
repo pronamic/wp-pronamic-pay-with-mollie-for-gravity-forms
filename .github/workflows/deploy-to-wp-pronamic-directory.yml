@@ -1,0 +1,30 @@
+name: Deploy to Pronamic WordPress directory
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag to deploy to WordPress.org'
+        required: true
+        type: string
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    environment:
+      name: Pronamic WordPress directory
+      url: https://wp.pronamic.directory/plugins/pronamic-pay-with-mollie-for-gravity-forms/
+
+    steps:
+      - id: 'auth'
+        uses: 'google-github-actions/auth@v2'
+        with:
+          project_id: 'pronamic-downloads'
+          workload_identity_provider: 'projects/623467151959/locations/global/workloadIdentityPools/github/providers/my-repo'
+
+      - name: 'Set up Cloud SDK'
+        uses: 'google-github-actions/setup-gcloud@v2'
+
+      - name: 'Use gcloud CLI'
+        run: 'gcloud info'
