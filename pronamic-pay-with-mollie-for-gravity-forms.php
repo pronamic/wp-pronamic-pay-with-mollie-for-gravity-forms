@@ -4,7 +4,7 @@
  * Plugin URI: https://www.pronamic.eu/plugins/pronamic-pay-with-mollie-for-gravity-forms/
  * Description: Pronamic Pay plugin with Mollie for Gravity Forms integration.
  *
- * Version: 1.7.1
+ * Version: 1.8.0
  * Requires at least: 5.9
  * Requires PHP: 8.1
  *
