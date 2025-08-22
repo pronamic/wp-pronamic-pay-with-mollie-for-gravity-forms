@@ -22,9 +22,9 @@
 		"url": "https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms/issues"
 	},
 	"devDependencies": {
-		"@wordpress/env": "^10.0.0",
-		"@wordpress/scripts": "^28.0.0",
-		"@wp-now/wp-now": "^0.1.72"
+		"@wordpress/env": "^10.29.0",
+		"@wordpress/scripts": "^30.22.0",
+		"@wp-now/wp-now": "^0.1.74"
 	},
 	"scripts": {
 		"lint:pkg-json": "wp-scripts lint-pkg-json",
