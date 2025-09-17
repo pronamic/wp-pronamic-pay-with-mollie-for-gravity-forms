@@ -61,8 +61,10 @@
 		],
 		"translate": [
 			"@build",
-			"rsync --recursive --delete --verbose ./build/project/languages/ ./languages/"
+			"rsync --recursive --delete --verbose ./build/project/languages/ ./languages/",
+			"@update-po"
 		],
+		"update-po": "find languages/*.po -type f -exec msgmerge --update --backup=off {} languages/pronamic-pay-with-mollie-for-gravity-forms.pot \\;",
 		"version": "@build",
 		"release": [
 			"@build",
