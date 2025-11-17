@@ -1,6 +1,6 @@
 {
 	"name": "@pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms",
-	"version": "1.9.3",
+	"version": "1.9.4",
 	"description": "Pronamic Pay plugin with Mollie for Gravity Forms integration.",
 	"author": "Pronamic",
 	"license": "GPL-2.0-or-later",
