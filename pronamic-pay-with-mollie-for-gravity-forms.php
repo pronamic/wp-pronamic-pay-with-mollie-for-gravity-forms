@@ -21,7 +21,7 @@
  * GitHub URI: https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms
  *
  * @author    Pronamic <info@pronamic.eu>
- * @copyright 2005-2023 Pronamic
+ * @copyright 2005-2026 Pronamic
  * @license   GPL-3.0-or-later
  * @package   Pronamic\WordPress\Pay
  */
