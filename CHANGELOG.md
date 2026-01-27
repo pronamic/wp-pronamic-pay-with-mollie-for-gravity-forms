@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- Start changelog -->
 
+## [1.11.0] - 2026-01-27
+
+### Composer
+
+- Changed `wp-pay-gateways/mollie` from `v4.18.0` to `v4.19.0`.
+	Release notes: https://github.com/pronamic/wp-pronamic-pay-mollie/releases/tag/v4.19.0
+- Changed `wp-pay/core` from `v4.29.0` to `v4.30.0`.
+	Release notes: https://github.com/pronamic/wp-pay-core/releases/tag/v4.30.0
+
+Full set of changes: [`1.10.0...1.11.0`][1.11.0]
+
+[1.11.0]: https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms/compare/v1.10.0...v1.11.0
+
 ## [1.10.0] - 2026-01-05
 
 ### Composer
