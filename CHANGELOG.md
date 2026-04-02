@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- Start changelog -->
 
+## [1.12.0] - 2026-04-02
+
+### Composer
+
+- Changed `wp-pay-extensions/gravityforms` from `v4.11.0` to `v4.12.0`.
+	Release notes: https://github.com/pronamic/wp-pronamic-pay-gravityforms/releases/tag/v4.12.0
+- Changed `wp-pay/core` from `v4.30.0` to `v4.32.0`.
+	Release notes: https://github.com/pronamic/wp-pay-core/releases/tag/v4.32.0
+
+Full set of changes: [`1.11.0...1.12.0`][1.12.0]
+
+[1.12.0]: https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms/compare/v1.11.0...v1.12.0
+
 ## [1.11.0] - 2026-01-27
 
 ### Composer
