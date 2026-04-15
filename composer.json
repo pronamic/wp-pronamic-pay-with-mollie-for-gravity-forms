@@ -31,10 +31,11 @@
 		"php": ">=8.2",
 		"automattic/jetpack-autoloader": "^5.0",
 		"composer/installers": "^2.3",
+		"pronamic/pronamic-pay-default-payment-methods": "^1.0",
 		"woocommerce/action-scheduler": "^3.9",
 		"wp-pay-extensions/gravityforms": "^4.12",
 		"wp-pay-gateways/mollie": "^4.19",
-		"wp-pay/core": "^4.32"
+		"wp-pay/core": "^4.33"
 	},
 	"require-dev": {
 		"pronamic/changelog-md-to-wordpress-plugin-readme-txt": "dev-main",
