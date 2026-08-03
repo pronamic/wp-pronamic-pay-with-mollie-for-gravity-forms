@@ -4,7 +4,7 @@ Tags: pronamic, pay, mollie, gravity, gravityforms
 Requires at least: 5.9
 Tested up to: 6.8
 Requires PHP: 8.2
-Stable tag: 1.12.0
+Stable tag: 1.13.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -73,6 +73,25 @@ Discover all the benefits of Pronamic Pay Premium at [https://www.pronamicpay.co
 == Changelog ==
 
 <!-- Start changelog -->
+
+### [1.13.0] - 2026-08-03
+
+#### Added
+
+- Added Pronamic Pay default payment methods integration. ([#9](https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms/pull/9))
+
+#### Composer
+
+- Added `pronamic/pronamic-pay-default-payment-methods` `v1.0.1`.
+	Registers the default Pronamic Pay payment methods, now including the "iDEAL | Wero QR" method name.
+	Release notes: https://github.com/pronamic/pronamic-pay-default-payment-methods/releases/tag/v1.0.1
+- Changed `wp-pay/core` from `v4.32.0` to `v4.33.0`.
+	Payment methods are now registered via the new `pronamic_pay_register_payment_methods` action, and default payment method registration has moved out of core into the `pronamic/pronamic-pay-default-payment-methods` package.
+	Release notes: https://github.com/pronamic/wp-pay-core/releases/tag/v4.33.0
+
+Full set of changes: [`1.12.0...1.13.0`][1.13.0]
+
+[1.13.0]: https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms/compare/v1.12.0...v1.13.0
 
 ### [1.12.0] - 2026-04-02
 
