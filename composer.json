@@ -10,7 +10,7 @@
 			"dealerdirect/phpcodesniffer-composer-installer": true
 		},
 		"platform": {
-			"php": "8.2"
+			"php": "8.3"
 		},
 		"platform-check": false,
 		"sort-packages": true,
@@ -28,20 +28,20 @@
 		}
 	},
 	"require": {
-		"php": ">=8.2",
+		"php": ">=8.3",
 		"automattic/jetpack-autoloader": "^5.0",
 		"composer/installers": "^2.3",
 		"pronamic/pronamic-pay-default-payment-methods": "^1.1",
-		"woocommerce/action-scheduler": "^4.0",
+		"woocommerce/action-scheduler": "^4.2",
 		"wp-pay-extensions/gravityforms": "^4.13",
-		"wp-pay-gateways/mollie": "^4.20",
-		"wp-pay/core": "^4.34"
+		"wp-pay-gateways/mollie": "^4.21",
+		"wp-pay/core": "^4.35"
 	},
 	"require-dev": {
 		"pronamic/changelog-md-to-wordpress-plugin-readme-txt": "dev-main",
 		"pronamic/pronamic-cli": "^1.1",
-		"pronamic/wp-coding-standards": "^2.4",
-		"roots/wordpress-no-content": "^6.8",
+		"pronamic/wp-coding-standards": "^2.5",
+		"roots/wordpress-no-content": "^7.1",
 		"wp-cli/dist-archive-command": "*",
 		"wp-cli/wp-cli-bundle": "*"
 	},
