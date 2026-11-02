@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4c9f4be1ca72e8a61dd197a27ebe17cd",
+    "content-hash": "9fd6b552d68458caefac994db2f6fb98",
     "packages": [
         {
             "name": "automattic/jetpack-autoloader",
@@ -1039,16 +1039,16 @@
         },
         {
             "name": "wp-pay-extensions/gravityforms",
-            "version": "v4.13.1",
+            "version": "v4.13.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pronamic/wp-pronamic-pay-gravityforms.git",
-                "reference": "3fa8d9fed1f77651b7ecd420a8fb5e17b7d1cecc"
+                "reference": "b0bc25dd40b0577080b170d0d991a4c79945d1dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pronamic/wp-pronamic-pay-gravityforms/zipball/3fa8d9fed1f77651b7ecd420a8fb5e17b7d1cecc",
-                "reference": "3fa8d9fed1f77651b7ecd420a8fb5e17b7d1cecc",
+                "url": "https://api.github.com/repos/pronamic/wp-pronamic-pay-gravityforms/zipball/b0bc25dd40b0577080b170d0d991a4c79945d1dc",
+                "reference": "b0bc25dd40b0577080b170d0d991a4c79945d1dc",
                 "shasum": ""
             },
             "require": {
@@ -1069,7 +1069,7 @@
                 "phpmd/phpmd": "^2.15",
                 "phpstan/extension-installer": "^1.3",
                 "phpstan/phpstan": "^1.11",
-                "pronamic/gravityforms": "^2.9",
+                "pronamic/gravityforms": "^3.2",
                 "pronamic/pronamic-cli": "^1.1",
                 "pronamic/wp-coding-standards": "^2.2",
                 "rector/rector": "^1.2",
@@ -1139,7 +1139,7 @@
                 "issues": "https://github.com/wp-pay-extensions/gravityforms/issues",
                 "source": "https://github.com/wp-pay-extensions/gravityforms"
             },
-            "time": "2026-10-21T08:44:07+00:00"
+            "time": "2026-11-02T12:18:54+00:00"
         },
         {
             "name": "wp-pay-gateways/mollie",
