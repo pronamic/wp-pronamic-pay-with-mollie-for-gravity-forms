@@ -15,7 +15,7 @@
 	],
 	"mappings": {
 		"wp-content/plugins/pronamic-pay-with-mollie-for-gravity-forms-dev": "./",
-		"wp-content/plugins/pronamic-pay-with-mollie-for-gravity-forms": "./build/project/"
+		"wp-content/plugins/pronamic-pay-with-mollie-for-gravity-forms": "./build/pronamic-pay-with-mollie-for-gravity-forms/"
 	},
 	"config": {
 		"PRONAMIC_PAY_DEBUG": true

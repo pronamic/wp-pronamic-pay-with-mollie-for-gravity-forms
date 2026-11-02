@@ -46,26 +46,24 @@
 		"wp-cli/wp-cli-bundle": "*"
 	},
 	"scripts": {
-		"phpcs": "vendor/bin/phpcs -s -v",
 		"build": [
 			"Pronamic\\ChangelogMdToWordPressPluginReadmeTxt\\Synchronizer::run",
-			"rm -rf ./build",
-			"mkdir ./build",
-			"mkdir ./build/stage-1",
-			"mkdir ./build/stage-2",
+			"rm -rf ./build/stage-1",
 			"rsync --recursive --verbose --exclude-from=.distignore --exclude-from=.gitignore ./ ./build/stage-1/",
 			"composer install --no-dev --prefer-dist --optimize-autoloader --working-dir=./build/stage-1/",
-			"rsync --recursive --verbose --exclude-from=.distignore ./build/stage-1/ ./build/stage-2/",
-			"vendor/bin/phpcbf -s -v --standard=phpcs-text-domain-fixer.xml ./build/stage-2/ || true",
-			"vendor/bin/wp i18n make-pot ./build/stage-2/ --slug=pronamic-pay-with-mollie-for-gravity-forms",
-			"vendor/bin/wp dist-archive ./build/stage-2/ --plugin-dirname=pronamic-pay-with-mollie-for-gravity-forms"
+			"rsync --recursive --delete --delete-excluded --verbose --exclude-from=.distignore ./build/stage-1/ ./build/pronamic-pay-with-mollie-for-gravity-forms/",
+			"vendor/bin/phpcbf -s -v --standard=phpcs-text-domain-fixer.xml ./build/pronamic-pay-with-mollie-for-gravity-forms/ || true",
+			"vendor/bin/wp i18n make-pot ./build/pronamic-pay-with-mollie-for-gravity-forms/ --slug=pronamic-pay-with-mollie-for-gravity-forms",
+			"vendor/bin/wp i18n make-mo ./build/pronamic-pay-with-mollie-for-gravity-forms/languages/",
+			"vendor/bin/wp dist-archive ./build/pronamic-pay-with-mollie-for-gravity-forms/ --plugin-dirname=pronamic-pay-with-mollie-for-gravity-forms --force"
 		],
-		"translate": [
+		"make-pot": [
 			"@build",
-			"rsync --recursive --delete --verbose ./build/stage-2/languages/ ./languages/",
-			"@update-po"
+			"rsync --recursive --delete --verbose ./build/pronamic-pay-with-mollie-for-gravity-forms/languages/ ./languages/",
+			"vendor/bin/wp i18n update-po ./languages/pronamic-pay-with-mollie-for-gravity-forms.pot"
 		],
-		"update-po": "find languages/*.po -type f -exec msgmerge --update --backup=off {} languages/pronamic-pay-with-mollie-for-gravity-forms.pot \\;",
+		"phpcs": "vendor/bin/phpcs",
+		"phpcbf": "vendor/bin/phpcbf",
 		"version": "@build",
 		"release": [
 			"@build",
