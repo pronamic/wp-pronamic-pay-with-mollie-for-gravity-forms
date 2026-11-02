@@ -4,7 +4,7 @@ Tags: pronamic, pay, mollie, gravity, gravityforms
 Requires at least: 5.9
 Tested up to: 7.1
 Requires PHP: 8.3
-Stable tag: 1.14.1
+Stable tag: 1.14.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -73,6 +73,23 @@ Discover all the benefits of Pronamic Pay Premium at [https://www.pronamicpay.co
 == Changelog ==
 
 <!-- Start changelog -->
+
+### [1.14.2] - 2026-11-02
+
+#### Changed
+
+- Simplified the checks for the legacy Gravity Forms admin and user notification methods.
+- Updated the build script to the latest SolveBeam plugin boilerplate; the build now also generates `.mo` translation files.
+
+#### Composer
+
+- Changed `wp-pay-extensions/gravityforms` from `v4.13.1` to `v4.13.2`.
+	Simplified the legacy Gravity Forms notification method checks using `method_exists()` and tested against Gravity Forms 3.2.
+	Release notes: https://github.com/pronamic/wp-pronamic-pay-gravityforms/releases/tag/v4.13.2
+
+Full set of changes: [`1.14.1...1.14.2`][1.14.2]
+
+[1.14.2]: https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms/compare/v1.14.1...v1.14.2
 
 ### [1.14.1] - 2026-10-21
 

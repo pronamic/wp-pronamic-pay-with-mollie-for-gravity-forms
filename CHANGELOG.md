@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- Start changelog -->
 
+## [1.14.2] - 2026-11-02
+
+### Changed
+
+- Simplified the checks for the legacy Gravity Forms admin and user notification methods.
+- Updated the build script to the latest SolveBeam plugin boilerplate; the build now also generates `.mo` translation files.
+
+### Composer
+
+- Changed `wp-pay-extensions/gravityforms` from `v4.13.1` to `v4.13.2`.
+	Simplified the legacy Gravity Forms notification method checks using `method_exists()` and tested against Gravity Forms 3.2.
+	Release notes: https://github.com/pronamic/wp-pronamic-pay-gravityforms/releases/tag/v4.13.2
+
+Full set of changes: [`1.14.1...1.14.2`][1.14.2]
+
+[1.14.2]: https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms/compare/v1.14.1...v1.14.2
+
 ## [1.14.1] - 2026-10-21
 
 ### Fixed
