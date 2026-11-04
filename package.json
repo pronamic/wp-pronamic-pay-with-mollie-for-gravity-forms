@@ -1,6 +1,6 @@
 {
 	"name": "@pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms",
-	"version": "1.14.2",
+	"version": "1.15.0-rc.1",
 	"description": "Pronamic Pay plugin with Mollie for Gravity Forms integration.",
 	"author": "Pronamic",
 	"license": "GPL-2.0-or-later",
@@ -22,8 +22,8 @@
 		"url": "https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms/issues"
 	},
 	"devDependencies": {
-		"@wordpress/env": "^12.0.0",
-		"@wordpress/scripts": "^37.0.0",
+		"@wordpress/env": "^12.1.0",
+		"@wordpress/scripts": "^37.1.0",
 		"@wp-now/wp-now": "^0.1.75"
 	},
 	"scripts": {
