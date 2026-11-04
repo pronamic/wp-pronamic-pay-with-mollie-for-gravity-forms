@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.15.0-rc.1] - 2026-11-04
+## [1.15.0] - 2026-11-04
 
 ### Composer
 
@@ -29,9 +29,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Changed `wp-pay-gateways/mollie` from `v4.21.0` to `v4.22.0`. Allowed Jetpack Autoloader 6.x and now requires `justinrainbow/json-schema` `^6.8`.
 	Release notes: https://github.com/pronamic/wp-pronamic-pay-mollie/releases/tag/v4.22.0
 
-Full set of changes: [`1.14.2...1.15.0-rc.1`][1.15.0-rc.1]
+Full set of changes: [`1.14.2...1.15.0`][1.15.0]
 
-[1.15.0-rc.1]: https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms/compare/v1.14.2...v1.15.0-rc.1
+[1.15.0]: https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms/compare/v1.14.2...v1.15.0
 
 ## [1.14.2] - 2026-11-02
 
