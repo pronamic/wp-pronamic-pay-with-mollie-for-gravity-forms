@@ -4,7 +4,7 @@ Tags: pronamic, pay, mollie, gravity, gravityforms
 Requires at least: 6.8
 Tested up to: 7.1
 Requires PHP: 8.3
-Stable tag: 1.15.0
+Stable tag: 1.16.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -75,6 +75,28 @@ Discover all the benefits of Pronamic Pay Premium at [https://www.pronamicpay.co
 <!-- Start changelog -->
 
 ### [Unreleased]
+
+### [1.16.0] - 2026-11-18
+
+#### Changed
+
+- Raised the minimum required WordPress version from 5.9 to 6.8, in line with the Pronamic Pay Gravity Forms extension.
+- Limited the "Send Notifications Delay" setting to payment feeds that already delay notifications, in preparation for its removal in favour of notification events.
+- The build now replaces text domains with `solvebeam/wp-text-domain-replacer` and also covers `pronamic-datetime`, `pronamic-pay-gravity-forms` and `pronamic-pay-mollie`, so these strings are part of the plugin translations.
+- Updated the translation files and completed the German, French and Dutch translations.
+
+#### Fixed
+
+- Fixed the position of the merge tag selector in the payment feed settings and renamed "Available tags" to "Frequently used tags".
+
+#### Composer
+
+- Changed `wp-pay-extensions/gravityforms` from `v4.13.3` to `v4.14.0`. Changed the text domain to `pronamic-pay-gravity-forms`, moved the admin assets to `assets/dist` and changed most hook callbacks to first-class callables. Code that removes these callbacks with an array callable no longer works.
+	Release notes: https://github.com/pronamic/wp-pronamic-pay-gravityforms/releases/tag/v4.14.0
+
+Full set of changes: [`1.15.0...1.16.0`][1.16.0]
+
+[1.16.0]: https://github.com/pronamic/wp-pronamic-pay-with-mollie-for-gravity-forms/compare/v1.15.0...v1.16.0
 
 ### [1.15.0] - 2026-11-04
 
