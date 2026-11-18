@@ -19,6 +19,4 @@
 			</property>
 		</properties>
 	</rule>
-
-	<rule ref="phpcs-text-domain-fixer.xml" />
 </ruleset>
