@@ -25,6 +25,21 @@
 				"vendor:wp-pay-gateways",
 				"woocommerce/action-scheduler"
 			]
+		},
+		"solvebeam-wp-text-domain-replacer": {
+			"search": [
+				"action-scheduler",
+				"pronamic_ideal",
+				"pronamic-datetime",
+				"pronamic-money",
+				"pronamic-pay-gravity-forms",
+				"pronamic-pay-mollie"
+			],
+			"replace": "pronamic-pay-with-mollie-for-gravity-forms",
+			"exclude": [
+				"node_modules",
+				"vendor"
+			]
 		}
 	},
 	"require": {
@@ -42,6 +57,7 @@
 		"pronamic/pronamic-cli": "^1.1",
 		"pronamic/wp-coding-standards": "^2.5",
 		"roots/wordpress-no-content": "^7.1",
+		"solvebeam/wp-text-domain-replacer": "^1.2",
 		"wp-cli/dist-archive-command": "*",
 		"wp-cli/wp-cli-bundle": "*"
 	},
@@ -52,7 +68,7 @@
 			"rsync --recursive --verbose --exclude-from=.distignore --exclude-from=.gitignore ./ ./build/stage-1/",
 			"composer install --no-dev --prefer-dist --optimize-autoloader --working-dir=./build/stage-1/",
 			"rsync --recursive --delete --delete-excluded --verbose --exclude-from=.distignore ./build/stage-1/ ./build/pronamic-pay-with-mollie-for-gravity-forms/",
-			"vendor/bin/phpcbf -s -v --standard=phpcs-text-domain-fixer.xml ./build/pronamic-pay-with-mollie-for-gravity-forms/ || true",
+			"vendor/bin/wptdr --dir=./build/pronamic-pay-with-mollie-for-gravity-forms/",
 			"vendor/bin/wp i18n make-pot ./build/pronamic-pay-with-mollie-for-gravity-forms/ --slug=pronamic-pay-with-mollie-for-gravity-forms",
 			"vendor/bin/wp i18n make-mo ./build/pronamic-pay-with-mollie-for-gravity-forms/languages/",
 			"vendor/bin/wp dist-archive ./build/pronamic-pay-with-mollie-for-gravity-forms/ --plugin-dirname=pronamic-pay-with-mollie-for-gravity-forms --force"

@@ -21,7 +21,6 @@
 
 php_errors.log
 
-phpcs-text-domain-fixer.xml
 phpcs.xml.dist
 
 .phpcs.dir.phpcompatibility.xml
