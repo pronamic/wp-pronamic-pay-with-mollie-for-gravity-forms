@@ -1,7 +1,7 @@
 === Pronamic Pay with Mollie for Gravity Forms ===
 Contributors: pronamic
 Tags: pronamic, pay, mollie, gravity, gravityforms
-Requires at least: 5.9
+Requires at least: 6.8
 Tested up to: 7.1
 Requires PHP: 8.3
 Stable tag: 1.15.0
